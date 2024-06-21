@@ -1,0 +1,95 @@
+/* Reset.css - Un reset básico de CSS */
+
+/* Eliminar los márgenes, padding y bordes predeterminados */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Asegurarse de que todos los elementos block-level usen el borde-box sizing */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Definir el line-height básico */
+body {
+    line-height: 1;
+}
+
+/* Eliminar los estilos predeterminados de listas */
+ol, ul {
+    list-style: none;
+}
+
+/* Eliminar las comillas de blockquote y q: antes y después */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Asegurarse de que las tablas tengan el layout colapsado */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Asegurarse de que los enlaces no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Quitar decoración en subrayados */
+u {
+    text-decoration: none;
+}
+
+/* Ocultar elementos de accesibilidad si es necesario */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Estilo de imagenes responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Eliminar la apariencia por defecto de botones */
+button, input, select, textarea {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit;
+}
+
+/* Quitar los efectos por defecto de los botones */
+button:focus, input:focus, select:focus, textarea:focus {
+    outline: none;
+}
